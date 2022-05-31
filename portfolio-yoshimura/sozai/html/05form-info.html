@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>お支払い情報入力</title>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/all.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a782f9c749.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div>
+		<p class="sub-title">お支払い情報入力</p>
+	</div>
+	<form action="#" method="post">
+	<!--
+		<div class="sub"><p>決済方法の選択</p></div>
+		<dl class="settlement">
+			<dt><input type="radio" id="card" name="settlement"></dt>
+			<dd><label for="card">クレジットカード</label></dd>
+			
+			<dt><input type="radio" id="cod" name="settlement"></dt>
+			<dd><label for="cod">代金引換</label></dd>
+			
+			<dt><input type="radio" id="post-pay" name="settlement"></dt>
+			<dd><label for="post-pay">後払い</label></dd>
+			
+			<dt><input type="radio" id="store" name="settlement"></dt>
+			<dd><label for="store">コンビニ払い</label></dd>
+		</dl>-->
+	
+	<div class="frame settlement">
+		
+		<ul>
+			<li>
+				<label class="settlement-select" for="card">
+					<input type="radio" id="card" name="settlement">
+					<i class="fa-solid fa-credit-card"></i><p>クレジットカード</p>
+				</label>
+			</li>
+			<li>
+				<label class="settlement-select" for="cod">
+					<input type="radio" id="cod" name="settlement">
+					<i class="fa-solid fa-hand-holding-hand"></i><p>代引き</p>
+				</label>
+			</li>
+			<li>
+				<label class="settlement-select" for="store">
+					<input type="radio" id="store" name="settlement">
+					<i class="fa-solid fa-store"></i><p>コンビニ払い</p>
+				</label>
+			</li>
+		</ul>
+	
+	</div>
+	</form>
+	<!--<form class="wide-bg wide-bg-order each-sec-wrapper each-sec-wrapper-order" action="#" method="post">
+		<dl class="dlTable">
+			<dt><label for="settlement">決済方法</label></dt>
+			<dd><select name="settlement" id="settlement">
+				<option value="">クレジットカード</option>
+				<option value="">代引き</option>
+				<option value="">後払い</option>
+				<option value="">コンビニ払い</option>
+				</select>
+			</dd>
+		</dl>
+		<div class="form-send">
+			<button onclick="location.href=’html/05form-info.html’" type="submit" name="send">次の入力に進む</button>
+		</div>
+	</form>-->
+	
+</body>
+</html>

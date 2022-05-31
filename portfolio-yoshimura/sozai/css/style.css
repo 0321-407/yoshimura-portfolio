@@ -1,0 +1,730 @@
+@charset "utf-8";
+/* CSS Document */
+
+html{
+	font-size: 62.5%;
+	background-color: #f4f4f4;
+}
+body{
+	color: #474747;
+	font-size: 1.6rem;
+	font-family: 'Shippori Mincho', serif;
+}
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: rgba(155,155,155,0.8);
+	transition: color .5s;
+}
+a:hover{
+	color: #474747;
+}
+
+/*navigation*/
+.navigation{
+	width: 1110px;
+	padding: 33px 66px 30px;
+	margin: auto;
+}
+.hover:hover{
+	color: #474747;
+}
+.clearfix::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.nav-logo{
+	float: left;
+}
+.nav-list{
+	float: right;
+}
+.nav-item::before{
+	content: "";
+	font-size: 0.6rem;
+	color: #a5a5a5;
+	position: absolute;
+	top: -20px;
+}
+.nav-item:hover::before{
+	color: #474747;
+	
+}
+
+.about::before{
+	content: "すぐ食べとは";
+}
+.farmer::before{
+	content: "契約農家";
+}
+
+.trial::before{
+	content: "お試し野菜";
+}
+.voice::before{
+	content: "お客様の声";
+}
+.nav-item{
+	position: relative;
+	display: inline-block;
+	width: 100px;
+    top: 25px;
+}
+
+/*初回限定！お試しセットを注文*/
+.order-botton{
+	margin: 40px 0;
+	text-align: center;
+}
+.btn:hover{
+	opacity: 0.8;
+}
+
+/*header*/
+header{
+	width: 1110px;
+	margin: auto;
+}
+.header{
+	background: url("../images/top/top-image.png") no-repeat;
+	width:100%;
+	max-width: 100%;
+	border-radius: 40px;
+	padding: 100px;
+}
+header h1{
+	font-size: 5.5rem;
+	color: #fff;
+	text-align: center;
+	vertical-align: center;
+	line-height: 2;
+}
+
+.texts{
+	margin: 50px;
+	text-align: center;
+	line-height: 2;
+}
+
+/*<!--契約農家紹介-->*/
+.wide-bg{
+	background-color: rgb(232, 177, 42);
+	max-width: 100%;
+	height: 1005px;
+	background-size: cover;
+	position: relative;
+}
+.introduct-img{
+	position: absolute;
+	top: -62px;
+}
+.frame{
+	width: 1110px;
+    margin: auto;
+}
+.farmer-introduction-appeal-parent{
+	display: flex;
+    justify-content: center;
+	height: 209.6px;
+	top: 90px;
+	
+}
+.farmer-introduction-appeal{
+    box-sizing:border-box;
+	padding: 85px 0 10px;
+	z-index: 100;
+}
+.img-introduction{
+	top: 10px;
+}
+.container-wrapper{
+	position: relative;
+	margin: 40px 0;
+}
+.container{
+	display: flex;
+	justify-content: center;
+}
+.farmer-box{
+	width: 491px;
+	height: 541.5px;
+	background-color: #fff;
+	border-radius: 6px;
+	
+}
+.farmer-box01{
+	margin: 0 10px 0 66.5px;
+}
+.farmer-box02{
+	margin: 0 66.5px 0 10px;
+}
+.box-title{
+	font-size: 27px;
+    padding: 30px 5px;
+    text-align: center;	
+	background-image: url("../images/introduction/under-line.png");
+	background-repeat: no-repeat;
+	background-position: 11px 51px;
+    background-size: 460px;
+	z-index: 1;
+}
+.box-wrapper{
+    padding: 0 10px 30px;
+	line-height: 1.5;
+}
+.box-subtitle{
+	margin-bottom: 10px;
+}
+.box-highlight{
+	background: linear-gradient(transparent 0%, #ff9 0%);
+	font-weight: bold;
+}
+.box-img{
+	object-fit: contain;
+	padding: 10px 0;
+}
+.img-short{
+	width: 100%;
+}
+
+/*<!--3つの理由-->*/
+.reasons-title{
+	margin: 30px 0;
+	text-align: center;
+}
+.reasons-list{
+	position: relative;
+}
+.reasons-img{
+	position: absolute;
+}
+.imo{
+	top: -41px;
+    left: 20px;
+}
+.imo-img{
+	width: 65%;
+}
+.tomato{
+	right: -221px;
+    bottom: 240px;
+}
+.tomato-img{
+	width: 60%;
+	opacity: 0.85;
+}
+.reasons-item{
+	width: 520px;
+	height: 328px;
+	padding: 50px 0;
+	background-repeat: no-repeat;
+}
+.reasons-item01{
+	background-image: url("../images/reasons/base_pink.png");
+	margin: auto;
+	margin-bottom: 50px;
+}
+.reasons-item-of-two{
+	display: flex;
+	justify-content: center;
+}
+.reasons-item02{
+	background-image: url("../images/reasons/base_green.png");
+	margin-right: 30px;
+}
+.reasons-item03{
+	background-image: url("../images/reasons/base_bagie.png");
+	margin-left: 30px;
+}
+.reasons-item-head{
+	padding: 20px 0;
+    font-size: 2.5rem;
+}
+.reasons-item .reasons-item-head,.reasons-item{
+	text-align: center;
+}
+.reason-detail{
+	line-height: 2;
+}
+
+/*<!--お試し購入-->*/
+
+.decoration-line{
+	width: 1400px;
+	margin: auto;
+	margin-top: 30px;
+}
+.decoration-line::before{
+	content: url(../images/set/set_line.png);
+	background: no-repeat;
+}
+
+.line-deco-part{
+	margin-top: -200px;
+}
+
+.each-sec-wrapper{
+	margin-bottom: 30px;
+}
+.title-box{
+	text-align: center;
+	position: relative;
+}
+.trial-section{
+	font-size: 20px;
+	margin: 35px 0;
+}
+.trial-section:before,.trial-section:after {
+  content: '';
+  top: 50%;
+  display: inline-block;
+  width: 51px;
+  height: 1.2px;
+  background-color: #333333;
+  -webkit-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+}
+.trial-section:before {
+	left: 310px;
+ -webkit-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+.trial-section:after {
+  right: 312px;
+-webkit-transform: rotate(-60deg);
+ transform: rotate(-60deg);
+}
+
+.trial-bold{
+	font-size: 30px;
+}
+.sub-title{
+	font-size: 40px;
+	padding: 35px 0;
+	text-align: center;
+}
+.yellow-line{
+	background: linear-gradient(transparent 0%, #f2da56 0%);
+}
+.trial-set-wrapper{
+	margin: 23px;
+}
+.trial-box{
+	width: 730px;
+    height: 250px;
+    margin: auto;
+    margin-top: 5px;
+    text-align: left;
+	position: relative;
+}
+.text-chank{
+	position: absolute;
+	top: 30%;
+    left: 10%;
+    line-height: 2;
+}
+.white-line{
+	background: -webkit-linear-gradient(transparent 0%, #fff 0%);
+	background: -moz-linear-gradient(transparent 0%, #fff 0%);
+	background: linear-gradient(transparent 0%, #fff 0%);
+}
+.trial-set-01{
+	background-image: url("../images/set/vege-introduction-bg01.png");
+	background-size: cover;
+}
+.trial-set-02{
+	background-image: url("../images/set/vege-introduction-bg02.png");
+	background-size: cover;
+}
+.vege-set-bold{
+	font-size: 2.3rem;
+}
+/*<!--スグ食べの品質保証-->*/
+.orange::before{
+	content: url("../images/quality/quality_line.png");
+	background: no-repeat;
+}
+.line-deco-part-orange{
+	margin-top: -100px;
+}
+
+.assurance-parent{
+	position: relative;
+}
+.assurance-child{
+	position: absolute;
+}
+.assurance{
+	color: #a45c45;
+}
+.no-line{
+	margin: 20px 0;
+}
+.trial-section.no-line::before{
+	content: none;
+}
+.trial-section.no-line::after{
+	content: none;
+}
+.texts-assurance{
+	position: relative;
+}
+.assurance-img{
+	position: absolute;
+	height: 213px;
+}
+.carrots{
+	bottom: 50px;
+    right: -70px;
+}
+.onions{
+	top: 55px;
+    left: -60px;
+}
+
+/*--少ない、日本のオーガニック農家--*/
+.orange .farmer-ver::before{
+	content: url("../images/quality/quality_line.png");
+	background: no-repeat;
+}
+.each-sec-wrapper-farmer-ver{
+	background: url("../images/share/pie-chart.png") no-repeat;
+	max-width: 100%;
+	height: 430px;
+	background-position-x: center;
+	position: relative;
+	margin-bottom: 0;
+}
+
+.farmer-ver{
+	 filter:  opacity(0%);
+}
+
+.organic-farmer-sec{
+	height: 780px;
+	background-image: url("../images/share/share-bg.png");
+	background-size: cover;
+}
+.farmer-sub{
+	color: #3562a6;
+}
+.farmer-main{
+	color: #3562a6;
+	text-align: center;
+	padding-top: 60px;
+}
+.share-text-bg{
+	background-image: url("../images/share/pie-chart.png");
+	width:100%;
+	max-width: 100%;
+	
+}
+/*<!--栽培方法による違い-->*/
+.wide-bg.method{
+	background-image: none;
+	background-color: #e3d7a3;
+	height: 370px;
+}
+.sub-method{
+	font-size: 30px;
+    padding: 35px 0 35px 0;
+	text-align: center;
+}
+.method-parent{
+	display: flex;
+	justify-content: space-between;
+}
+/*.method-children::before{
+	content: url("../images/method/stripe.png");
+}*/
+.method-children{
+	width:180px;
+	height: 180px;
+	background-image: url("../images/method/method-circle.png");
+	max-width: 100%;
+	position: relative;
+}
+.method-list{
+	position: absolute;
+	top: 50%;
+	left: 7%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: white;
+}
+.method-item{
+	padding: 0 0 10px;
+	font-size: 25px;
+}
+.method-critification{
+	padding: 3px;
+	border: solid 3px white;
+}
+.method-children.color-02{
+	background-image: url("../images/method/method-circle-02.png");
+}
+.method-children.color-03{
+	background-image: url("../images/method/method-circle-03.png");
+}
+.method-text{
+	margin: 30px 0;
+	text-align: center;
+}
+/*<!--食べて分かったこの違い-->*/
+.decoration-line.brown::before{
+	content: url("../images/difference/difference_line.png");
+	background: no-repeat;
+}
+.difference-yellow{
+	color: #ce9d01;
+	
+}
+.defference-sub-title{
+	margin-bottom: 30px;
+	padding-top: 30px;
+}
+.difference-item{
+	font-size: 3.0rem;
+}
+.difference-parent{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 60px;
+	background:rgba(229,227,74,0.3);
+	border-radius: 10px;
+}
+.difference-reverse{
+	flex-direction: row-reverse;
+}
+.difference-img{
+	width: 350px;
+	height: auto;
+}
+.difference-box{
+	width: 642px;
+	margin-left: 30px;
+}
+/*よくある質問*/
+.wide-bg-question{
+	background: #e3d7a3;
+	border-radius: 10px;
+	height: 860px;
+}
+.each-sec-wrapper-q{
+	
+}
+.question{
+	color: #3f76b1;
+}
+.answer-bolder{
+	font-weight: bolder;
+}
+.answer{
+	color: #b03f3f;
+}
+.qa{
+	margin: 0 30px 0 0;
+}
+.qa-fontsize{
+	font-size: 2.5rem;
+}
+.qa-details{
+	margin-left: 50px;
+}
+.qa-details-fontsize{
+	font-size: 2.0rem;
+}
+.question-box{
+	background: #ffffff;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+.texts-question{
+	text-align: left;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.text-answer{
+	padding-bottom: 30px;
+}
+.question-and-text{
+	padding: 10px 0;
+	font-weight: bolder;
+}
+.question-and-text::after{
+	content: url("../images/questions/question-line.png");
+	background: no-repeat;
+}
+.question02-size{
+	width: 720px;
+}
+/*<!--ご注文はこちらから-->*/
+dt,dd {
+    margin: 0; /* ブラウザの初期値をクリア */
+    padding: 0; /* ブラウザの初期値をクリア */
+}
+.dlTable {
+    width: 550px; /* テーブルの横幅を500pxに指定 */
+	margin: auto;
+    border-top: 1px solid #ddd; /* テーブルの上の線 */
+    border-left: 1px solid #ddd; /* テーブルの左の線 */
+    display: flex; /* 子要素のdtとddを横並びにする */
+    flex-wrap: wrap; /* 1つのdtとddで1行になるよう改行させる */
+}
+.dlTable dt,
+.dlTable dd {
+    border-bottom: 1px solid #ddd; /* 各セルの下の線。テーブルの下の線も補える。 */
+    border-right: 1px solid #ddd; /* 各セルの右の線。テーブルの右の線も補える。 */
+    box-sizing: border-box; /* widthの計算を楽にするため */
+    padding: 15px 30px; /* 各セルに余白を取る */
+}
+.dlTable dt {
+    font-size: 16px; /* フォントサイズを16pxに指定 */
+    width: 200px; /* dt（見出し項目）の横幅を200pxに指定 */
+}
+.dlTable dd {
+    width: calc(100% - 200px); /* テーブル幅からdtを引いた分の横幅を指定。 */
+}
+.wide-bg-order{
+	background: none;
+}
+.form-send{
+	text-align: center;
+	margin-top: 30px;
+}
+/*お届け日時入力*/
+.date{
+	width: 450px;
+	margin: auto;
+	display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.each-day{
+	display: block;
+	width: 100px;
+	margin-bottom: 10px;
+	font-size: 2.0rem;
+}
+/*お支払方法の選択*/
+.sub{
+	font-size: 20px;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 30px;
+}
+.settlement{
+	display: flex;
+  	flex-wrap: wrap;
+	width: 300px;
+	margin: auto;
+}
+
+.settlement dt{
+	width: 20%;
+	margin: 0;
+	display: inline-block;
+}
+.settlement dd{
+	width: 80%;
+}
+.settlement-select{
+	display: flex;
+	margin: 30px 0;
+}
+.frame .settlement{
+	
+}
+
+
+
+
+/* FOR smartphone landscape
+***************************************************************************/
+@media screen and (max-width:750px) {
+
+    .dlTable {
+        width: 100%; /* 横幅をpxではなく、幅いっぱいに指定。 */
+        border-left: none; /* テーブルの左の線を消す */
+        display: block; /* 横並びにさせないようブロック要素にする */
+    }
+    .dlTable dt,
+    .dlTable dd {
+        border-right: none; /* セルの右の線を消す */
+        width: 100%; /* 横幅を幅いっぱいに指定 */
+        padding: 10px 15px; /* 各セルに余白を取る */
+    }
+    .dlTable dt {
+        border-bottom: none; /* 下の線を消す（ddの下の線が残る） */
+        padding-bottom: 0; /*ddとの距離を近づけるため、0にする*/
+    }
+
+}
+/*form{
+	display:table;
+}
+.each-sec-wrapper-order{
+	margin: auto;
+}
+.wide-bg-order{
+	background: none;
+	height: 1330px;
+}
+.order-parent{
+	display: table;
+}
+.order-children{
+	display:table-cell;
+}
+.right{
+	text-align: right;
+}
+table{
+	width: 900px;
+	border: none;
+	margin: auto;
+	table-layout: fixed;
+}
+th label{
+	width: 100px;
+}
+.required::after{
+	content: "＊";
+	color: #e3719f;
+}
+*/
+/*<!--/footer*/
+.wide-bg-footer{
+	background: #f9f9f9;
+	height: 200px;
+}
+.footer{
+	
+}
+.footer-center{
+	text-align: center;
+	padding: 30px 0;
+}
+.footer ul{
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+.footer li{
+	padding: 0 15px;
+}
+
+
+
+
+
+
+
